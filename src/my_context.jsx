@@ -1,4 +1,5 @@
 import { createContext, useState, useEffect } from 'react'
+import IconHeart from './components/IconHeart'
 export const MyContext = createContext()
 
 const DataProvider = ({ children }) => {
@@ -15,7 +16,7 @@ const DataProvider = ({ children }) => {
   }, [])
 
   return (
-    <MyContext.Provider value={{ pics, setPics }}>
+    <MyContext.Provider value={{ pics, setPics, IconHeart }}>
       {children}
     </MyContext.Provider>
 

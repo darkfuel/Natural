@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 import Favorites from './views/Favorites'
 import Home from './views/Home'
+import NotFound from './views/NotFound'
 
 // const PHOTO_URL = '/photos.json'
 
@@ -20,6 +21,10 @@ const App = () => {
         <Route
           path='/favoritos'
           element={<Favorites />}
+        />
+        <Route
+          path='*'
+          element={<NotFound />}
         />
       </Routes>
     </div>

@@ -4,7 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "eslintConfig": {
-    "extends": "node_modules/standard/package.json"
+    "extends": [
+      "./node_modules/standard/package.json"
+    ]
   },
   "scripts": {
     "dev": "vite",
